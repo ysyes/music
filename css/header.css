@@ -14,12 +14,13 @@
 	right: 0;
 }
 #blurBg{
-	background: url(../img/music_img.jpg) no-repeat;
-	background-size: cover;
-	-webkit-filter: blur(90px);
-    -moz-filter: blur(90px);
-    -ms-filter: blur(90px);
-    filter: blur(90px);
+	background: url(../img/music_img3.jpg) no-repeat;
+	/*background: #7699ad;*/
+	background-size: auto 1800px;
+	-webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
     z-index: 1;
 }
 #blurBgMask{
