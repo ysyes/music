@@ -1,0 +1,107 @@
+#mainbox{
+	color: #DDDDDD;
+	width: 900px;
+}
+#mainbox h2{
+	height: 60px;
+	padding-top: 30px;
+	font-size: 22px;
+}
+#mainbox .upload{
+	padding: 20px 30px;
+	margin-top: 10px;
+}
+#mainbox .upload h3{
+	font-size: 16px;
+}
+#mainbox .upload .line{
+	height: 4px;
+	border-radius: 4px;
+	background: rgba(255,255,255,0.3);
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#mainbox .upload .line span{
+	display: block;
+	width: 80%;
+	height: 100%;
+	border-radius: 4px;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#mainbox .upload .line i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/delete.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: -35px;
+	top: -8px;
+	cursor: pointer;
+}
+#mainbox .upload p{
+	font-size: 13px;
+}
+#mainbox ul{
+	padding: 0 30px;
+	font-size: 13px;
+}
+#mainbox ul li .name{
+	height: 40px;
+	line-height: 20px;
+	padding-top: 18px;
+	font-weight: bold;
+}
+#mainbox ul li div.main span {
+    padding-right: 20px;
+    padding-left: 3px;
+}
+#mainbox ul li div.input_text{
+	width: 300px;
+	height: 32px;
+	position: relative;
+}
+#mainbox ul li div.input_text input{
+    border: 1px solid #cdcdcd;
+    height: 32px;
+    width: 100%;
+    padding: 0 10px;
+    background: rgba(255,255,255,1);
+    border-radius: 2px;
+    color: #333333;
+    font-size: 13px;
+}
+#mainbox ul li div.input_text i{
+	display: block;
+	line-height: 32px;
+	font-style: normal;
+	color: #999;
+	position: absolute;
+	right: 3px;
+	top: 0;
+}
+#mainbox .sub{
+	margin-top: 30px;
+	padding-left: 30px;
+}
+#mainbox .sub span{
+	display: block;
+	float: left;
+    width: 80px;
+    height: 31px;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -387px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 31px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#mainbox .sub span:nth-child(2){
+	background-position: 0 -305px;
+	color: #999999;
+}

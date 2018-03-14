@@ -1,0 +1,74 @@
+#mainbox .left{
+	width: 650px;
+	color: #eee;
+}
+#mainbox .right{
+	width: 270px;
+	color: #eee;
+}
+#mainbox .left .title1 span{
+	font-size: 12px;
+	line-height: 40px;
+}
+#mainbox .left .name{
+	border-bottom: 1px solid #CCCCCC;
+}
+#mainbox .left .name h3{
+	float: left;
+	border-bottom: 2px solid #FFFFFF;
+	font-size: 22px;
+	padding-bottom: 5px;
+}
+#mainbox .left .title2{
+	font-size: 16px;
+	line-height: 40px;
+}
+#mainbox .left ul li{
+	height: 40px;
+	line-height: 40px;
+	/*background: #CCCCCC;*/
+}
+#mainbox .left ul li input{
+	float: left;
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin-top: 13px;
+	margin-right: 10px;
+}
+#mainbox .left ul li span{
+	float: left;
+	width: 30%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#mainbox .left ul li .play{
+	float: right;
+	width: 22px;
+	height: 22px;
+	margin: 9px;
+	background: url(../img/search.png) no-repeat;
+	background-size: 90px;
+	cursor: pointer;
+}
+#mainbox .right h3{
+	font-size: 22px;
+	padding-top: 20px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	font-weight: normal;
+	
+}
+#mainbox .right ul li{
+	float: left;
+	background: rgba(0,0,0,0.3);
+	padding: 5px;
+	margin: 7px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#mainbox .right ul li:hover{
+	background: #0c8ed9;
+}

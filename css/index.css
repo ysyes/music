@@ -1,0 +1,35 @@
+/*标签*/
+#mainbox>li{
+	height: 200px;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+#mainbox .lab_img{
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 25px 0;
+	background: rgba(255,255,255,0.2);
+	border-radius: 150px;
+}
+#mainbox .lab_img img{
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+	border-radius: 100px;
+}
+#mainbox .lab_name{
+	float: left;
+	width: 700px;
+	padding: 25px 50px;
+}
+#mainbox .lab_name li{
+	float: left;
+	width: 110px;
+	color: #DDDDDD;
+	margin-bottom: 18px;
+	cursor: pointer;
+}
+#mainbox .lab_name li:hover{
+	color: #0c8ed9;
+}

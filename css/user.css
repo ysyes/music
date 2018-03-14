@@ -1,0 +1,131 @@
+#header_img{
+	width: 100%;
+	height: 350px;
+	padding-top: 30px;
+	text-align: center;
+	color: #DDDDDD;
+	position: relative;
+	z-index: 3;
+	background: rgba(0,0,0,0.3);
+}
+#header_img img{
+	width: 120px;
+	height: 120px;
+}
+#header_img p{
+	font-size: 30px;
+	line-height: 40px;
+}
+#header_img ul{
+	width: 200px;
+	margin: 20px auto;
+}
+#header_img ul li{
+	float: left;
+	width: 100px;
+}
+#header_img ul li span{
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 30px;
+}
+#mainbox{
+	width: 900px;
+	color: #DDDDDD;
+	margin-top: -50px;
+}
+#mainbox ul:after,
+#mainbox ul.music_title li:after,
+#mainbox ul.music_list li:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+#mainbox .title1 li,
+#mainbox .title2 li{
+	float: left;
+	line-height: 50px;
+	margin: 0 15px;
+	cursor: pointer;
+}
+#mainbox .title1 li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #DDDDDD;
+}
+#mainbox .title1 li.checked,
+#mainbox .title1 li.checked a{
+	color: #888;
+}
+#mainbox .title2 li{
+	font-size: 15px;
+}
+#mainbox .title2 li span{
+	font-size: 16px;
+	padding: 0 5px;
+}
+#mainbox .title3{
+	margin-top: 10px;
+}
+#mainbox .title3 li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 12px 0 30px;
+	margin: 0 5px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #333333;
+	background: url(../img/button2.png) no-repeat;	
+	cursor: pointer;
+}
+#mainbox .title3 li:nth-child(1){
+	background-position: -5px -805px;
+	margin-left: 15px;
+	color: #DDDDDD;
+}
+#mainbox .title3 li:nth-child(2){
+	background-position: 0 -1063px;
+}
+#mainbox .title3 li:nth-child(3){
+	background-position: 0 -2761px;
+}
+#mainbox .title3 li:nth-child(4){
+	background-position: 0 -1225px;
+}
+#mainbox .music_main li span{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#mainbox .music_main li span:nth-child(1){
+	width: 300px;
+}
+#mainbox .music_main li span:nth-child(2){
+	width: 200px;
+}
+#mainbox .music_main li span:nth-child(3){
+	width: 200px;
+}
+#mainbox .music_main li span:nth-child(4){
+	width: 50px;
+}
+#mainbox .music_title{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+#mainbox .music_title li span{
+	font-size: 12px;
+}
+#mainbox .music_list li span:nth-child(1){
+	font-weight: bold;
+}

@@ -1,0 +1,117 @@
+#mainbox{
+	color: #DDDDDD;
+	width: 900px;
+}
+#mainbox h2{
+	height: 60px;
+	padding-top: 30px;
+	font-size: 22px;
+}
+#mainbox nav{
+	height: 40px;
+	border: 1px solid #CCCCCC;
+}
+#mainbox nav span{
+	float: left;
+	height: 40px;
+	padding: 0 20px;
+	line-height: 38px;
+	position: relative;
+	top: -1px;
+	cursor: pointer;
+}
+#mainbox nav span.checked{
+	background: white;
+	color: #333333;
+	border-top: 2px solid #0c8ed9;
+}
+#mainbox .putmain{
+	clear: both;
+	font-size: 13px;
+	padding-top: 30px;
+}
+#mainbox ul li{
+	margin: 10px 0;
+}
+#mainbox ul li:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+#mainbox ul li div.name{
+	float: left;
+	width: 60px;
+	height: 32px;
+	line-height: 32px;
+}
+#mainbox ul li div.main{
+	float: left;
+}
+#mainbox ul li div.main input,
+#mainbox ul li div.main select{
+	border: 1px solid #cdcdcd;
+	height: 32px;
+	padding: 0 10px;
+	background: rgba(255,255,255,1);
+	border-radius: 2px;
+	color: #333333;
+	font-size: 13px;
+}
+#mainbox ul li div.main textarea{
+	width: 300px;
+	height: 135px;
+	padding: 5px 10px;
+	border: 1px solid #cdcdcd;
+	border-radius: 2px;
+	color: #333333;
+	font-size: 13px;
+	resize: none;
+}
+#mainbox ul li div.main select{
+	height: 28px;
+	padding-right: 25px;
+	background:white url(../img/select.png) no-repeat;
+	background-position: right 5px center;
+}
+#mainbox ul li div.main span{
+	padding-right: 20px;
+	padding-left: 3px;
+}
+
+#mainbox .music_img{
+	margin:10px 50px;
+	width: 145px;
+	height: 145px;
+	border: 1px solid #CCCCCC;
+	position: relative;
+}
+#mainbox .music_img img{
+	width: 100%;
+	height: 100%;
+}
+#mainbox .music_img i{
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	display: block;
+	width: 145px;
+	height: 26px;
+	background: rgba(0,0,0,0.6);
+	font-style: normal;
+	text-align: center;
+	line-height: 26px;
+	color: #EEEEEE;
+}
+#mainbox .sub{
+	margin: 30px 60px;
+	width: 80px;
+	height: 31px;
+	background: url(../img/button2.png) no-repeat;
+	background-position: 0 -387px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 31px;
+	cursor: pointer;
+}
