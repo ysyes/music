@@ -9,14 +9,36 @@
 	width: 150px;
 	height: 150px;
 	margin: 25px 0;
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.3);
+	border: 25px solid rgba(0,0,0,0.4);
 	border-radius: 150px;
+	position: relative;
 }
-#mainbox .lab_img img{
+#mainbox .lab_img i{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin:10px 20px;
+	background:url(../img/type/type.png) no-repeat;
+	background-size: 60px;
+	background-position:0 0;
+}
+#mainbox li:nth-child(2) .lab_img i{
+	background-position:0 -60px;
+}
+#mainbox li:nth-child(3) .lab_img i{
+	background-position:0 -120px;
+}
+#mainbox .lab_img span{
+	position: absolute;
+	left: 0;
+	bottom:10px;
+	display: block;
 	width: 100px;
-	height: 100px;
-	margin: 25px;
-	border-radius: 100px;
+	height: 20px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
 }
 #mainbox .lab_name{
 	float: left;
