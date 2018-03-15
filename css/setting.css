@@ -9,7 +9,7 @@
 }
 #mainbox nav{
 	height: 40px;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #FFFFFF;
 }
 #mainbox nav span{
 	float: left;
@@ -23,7 +23,7 @@
 #mainbox nav span.checked{
 	background: white;
 	color: #333333;
-	border-top: 2px solid #0c8ed9;
+	/*border-top: 2px solid #0c8ed9;*/
 }
 #mainbox .putmain{
 	clear: both;
