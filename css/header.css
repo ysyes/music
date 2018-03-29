@@ -144,6 +144,20 @@
 	background-color: #0c8ed9;
     color: #fff;
 }
+#nav>a{
+	display: block;
+	height: 55px;
+	line-height: 55px;
+	color: #2c323b;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;	
+}
+#nav>a:hover{
+	color: #EEEEEE;
+}
 /*内容*/
 #mainbox{
 	width: 1000px;

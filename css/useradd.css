@@ -1,0 +1,139 @@
+#mainbox{
+	width: 100%;
+	height: calc(100% - 78px);
+	color: #EEEEEE;
+}
+.left{
+	width: 250px;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	box-shadow: 1px 0 5px #333;
+}
+.right{
+	width: calc(100% - 250px);
+	height: 100%;
+	/*background: rgba(255,255,255,0.2);*/
+}
+.left h2{
+	line-height: 80px;
+	font-size: 24px;
+	text-align: center;
+}
+.left li{
+	box-shadow:0 -1px 1px #CCCCCC;
+}
+.left li h3{
+	padding-left: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px #000000;
+}
+.left li h3 i{
+	display: block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin: 9px;
+	background: url(../img/select.png) no-repeat center;
+}
+.left li p{
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+}
+/*选中状态*/
+.left li h3.checked{
+	color: #0c8ed9;
+}
+.left li p.checked{
+	color: #3cb7ff;
+}
+
+
+/*内容页*/
+.right{
+	padding-left: 100px;
+	padding-top: 20px;
+}
+.right h3{
+	width: 400px;
+	padding-bottom: 10px;
+	text-align: center;
+	line-height: 50px;
+}
+.right h3 img{
+	height: 46px;
+	vertical-align: top;
+}
+.right ul li{
+	margin: 15px 0;
+}
+.right ul li:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.right ul li div.name{
+	float: left;
+	width: 85px;
+	height: 32px;
+	line-height: 32px;
+}
+.right ul li div.main{
+	float: left;
+}
+.right ul li div.main input,
+.right ul li div.main select{
+	border: 1px solid #cdcdcd;
+	height: 32px;
+	padding: 0 10px;
+	background: rgba(255,255,255,1);
+	border-radius: 2px;
+	color: #333333;
+	font-size: 13px;
+}
+.right ul li div.main textarea{
+	width: 300px;
+	height: 135px;
+	padding: 5px 10px;
+	border: 1px solid #cdcdcd;
+	border-radius: 2px;
+	color: #333333;
+	font-size: 13px;
+	resize: none;
+}
+.right ul li div.main select{
+	height: 28px;
+	padding-right: 25px;
+	background:white url(../img/select.png) no-repeat;
+	background-position: right 5px center;
+}
+.right ul li div.main span{
+	padding-right: 20px;
+	padding-left: 3px;
+}
+.right ul li>i{
+	display: block;
+	float: left;
+	height: 32px;
+	font-size: 22px;
+	padding-left: 8px;
+	padding-top: 10px;
+	color: #b32121;
+}
+#mainbox .sub {
+    margin: 30px 60px;
+    width: 80px;
+    height: 31px;
+    background: url(../img/button2.png) no-repeat;
+    background-position: 0 -387px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 31px;
+    cursor: pointer;
+}

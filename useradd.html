@@ -5,7 +5,7 @@
 		<title>播放器</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/setting.css"/>
+		<link rel="stylesheet" type="text/css" href="css/useradd.css"/>
 		<link rel="shortcut icon" href="img/ico.png">
 	</head>
 	<body>
@@ -26,52 +26,75 @@
 				</a>
 			</div>				
 		</div>
-		<div id="nav">
-			<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="index.html">标签</a></li>
-				<li><a href="#">歌单</a></li>
-				<li><a href="#">专辑</a></li>
-			</ul>
-			<a href="useradd.html">后台管理</a>
-		</div>
-		<div id="mainbox">
-			<h2>个人设置</h2>
-			<nav>
-				<span class="checked">基本设置</span>
-				<span>查看私信</span>
-			</nav>
-			<div class="clear putmain">
-				<ul class="fl">
+		<div id="mainbox" class="clear">
+			<div class="left fl">
+				<h2>后台管理系统</h2>
+				<ul>
+					<li>
+						<h3 class="checked">用户管理<i></i></h3>
+						<p class="checked">添加用户</p>
+						<p>删除用户</p>
+					</li>
+					<li>
+						<h3>音乐管理<i></i></h3>
+						<p>采集数据</p>
+						<p>添加音乐</p>
+						<p>删除音乐</p>
+						<p>修改音乐</p>
+						<p>音乐处理</p>
+					</li>
+					<li>
+						<h3>用户私信管理<i></i></h3>
+						<p>发送私信</p>
+						<p>删除私信</p>
+					</li>
+					<li>
+						<h3>系统日志</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="right fl">
+				<h3><img src="img/user_add.png"/>添加用户</h3>
+				<ul>
 					<li>
 						<div class="name">
-							昵称：
+							手机号码：
 						</div>
 						<div class="main">
-							<input style="width: 300px;" type="text" name="" id="" value="Summer" />
+							<input style="width: 300px;" type="text" name="" id="" value="">
+						</div>
+						<i>*</i>
+					</li>
+					<li>
+						<div class="name">
+							用户姓名：
+						</div>
+						<div class="main">
+							<input style="width: 300px;" type="text" name="" id="" value="">
+						</div>
+						<i>*</i>
+					</li>
+					<li>
+						<div class="name">
+							初始密码：
+						</div>
+						<div class="main">
+							<input style="width: 300px;" type="text" name="" id="" value="">
+						</div>
+						<i>*</i>
+					</li>
+					<li>
+						<div class="name">
+							用户性别：
+						</div>
+						<div class="main">
+							<input type="radio" name="sex"><span>男</span>
+							<input type="radio" name="sex"><span>女</span>
 						</div>
 					</li>
 					<li>
 						<div class="name">
-							介绍：
-						</div>
-						<div class="main">
-							<textarea name="" rows="" cols="">声音是一种深刻的纪念，纪念每一个永远不再回来的时刻。</textarea>
-						</div>
-					</li>
-					<li>
-						<div class="name">
-							性别：
-						</div>
-						<div class="main">
-							<input type="radio" name="sex" /><span>男</span>
-							<input type="radio" name="sex" /><span>女</span>
-							<input type="radio" name="sex" /><span>保密</span>
-						</div>
-					</li>
-					<li>
-						<div class="name">
-							生日：
+							出生日期：
 						</div>
 						<div class="main">
 							<select name="">
@@ -129,27 +152,64 @@
 					</li>
 					<li>
 						<div class="name">
-							地区：
+							所属机构：
 						</div>
 						<div class="main">
-							<select name="">
+							<select style="height: 32px;width: 300px;" name="">
 								<option value="">陕西省</option>
 							</select>
-							<span></span>
-							<select name="">
-								<option value="">西安市</option>
-							</select>
+						</div>
+						<i>*</i>
+					</li>
+					<li>
+						<div class="name">
+							身份证号：
+						</div>
+						<div class="main">
+							<input style="width: 300px;" type="text" name="" id="" value="">
+						</div>
+						<i>*</i>
+					</li>
+					<li>
+						<div class="name">
+							上传头像：
+						</div>
+						<div class="main">
+							<input style="width: 300px;padding-top: 4px;" type="file" name="" id="" value="">
+						</div>
+					</li>
+					<li>
+						<div class="name">
+							备注：
+						</div>
+						<div class="main">
+							<textarea name="" rows="" cols=""></textarea>
 						</div>
 					</li>
 				</ul>
-				<div class="music_img fl">
-					<img src="img/user2.jpg"/>
-					<i>更换头像</i>
+				<div class="sub">
+					保存
 				</div>
 			</div>
-			<div class="sub">
-				保存
-			</div>
 		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			$(".left li h3").click(function () {
+				if ($(this).parent().hasClass("checked")) {
+					$(this).parent().removeClass("checked");
+					$(this).siblings().stop().slideUp();
+				} else{
+					$(this).parent().addClass("checked");
+					$(this).siblings().stop().slideDown();
+				}
+				
+			})
+			$(".left li p").click(function () {
+				$(".left li p").removeClass("checked");
+				$(".left li h3").removeClass("checked");
+				$(this).addClass("checked").siblings("h3").addClass("checked");
+			})
+			$(".left li h3.checked").click()
+		</script>
 	</body>
 </html>
